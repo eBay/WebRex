@@ -1,4 +1,4 @@
-![eBay Open Source ](https://github.com/eBay/WebRex/raw/master/sample/src/main/webapp/resources/img/webrexLogoHeader.png)WebRex
+![eBay Open Source ](https://github.com/eBay/WebRex/raw/master/sample/src/main/webapp/resources/img/webrexLogoHeader.png)WebRex [![Build Status](https://api.travis-ci.org/eBay/WebRex.png?branch=master)](https://travis-ci.org/eBay/WebRex)
 ==================
 
 
