@@ -1,0 +1,5 @@
+<bundles>
+	<bundle id="bundle1">
+		<resource urn="css.local:/EbayTime.css" />
+	</bundle>
+</bundles>

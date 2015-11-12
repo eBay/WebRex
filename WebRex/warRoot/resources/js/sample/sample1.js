@@ -1,0 +1,1 @@
+document.write("this is sample1.js<br>");

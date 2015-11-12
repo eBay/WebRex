@@ -1,0 +1,1 @@
+document.write("this is shared component sys.js<br>");

@@ -1,0 +1,10 @@
+<bundles>
+	<bundle id="shared" type="system">
+		<resource path="/js/sample/shared1.js" />
+		<resource path="/js/sample/shared2.js" />
+	</bundle>
+	<bundle id="shared2">
+		<resource path="/js/sample/shared1.js" />
+		<resource path="/js/sample/shared2.js" />
+	</bundle>
+</bundles>

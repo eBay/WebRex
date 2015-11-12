@@ -1,0 +1,1 @@
+document.write("this is sample shared2.js<br>");

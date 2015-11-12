@@ -1,0 +1,1 @@
+document.write("this is de_DE sample.js<br>");

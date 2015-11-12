@@ -1,0 +1,68 @@
+<profile>
+	<common-js-slots>
+		<js-slot id="SYS">
+			<js urn="firstJs" />
+			<js urn="thirdJs" />
+			<js urn="${res.js.local.fourthJs}" />
+		</js-slot>
+		<js-slot id="search">
+			...
+		</js-slot>
+	</common-js-slots>
+	<pages>
+		<page id="header" include="true">
+		</page>
+		<page id="footer" include="true">
+		</page>
+		<page id="home" request-uri="/jsp/home.jsp">
+			<import-page id="header" />
+			<import-page id="footer" />
+			<js-slot id="HEAD">
+				<js urn="trackingJs" /><!-- not in page, but added by profile -->
+				<js urn="firstJs" />
+			</js-slot>
+			<js-slot id="BODY">
+				<js urn="thirdJs" />
+				<js urn="${res.js.local.fifthJs}" />
+			</js-slot>
+			<js-slot id="BOTTOM" default="true" deferred="true" override="true">
+				<js urn="secondJs" />
+				<js urn="bigJs" /> <!--  slot re-assignment-->
+				<js urn="dynamic_1">js code here</js> <!-- dynamic added from code -->
+			</js-slot>
+			<js-slot id="ABOVE_FOLD">
+				<js urn="otherJs" />
+				<js urn="anotherJs" />
+			</js-slot>
+			<js-slot id="Header">
+				...
+			</js-slot>
+			<css-slot id="HEAD">
+				<css urn="firstCss" />
+				<css urn="${res.css.local.secondCss}" />
+			</css-slot>
+			<img-sprite background-url="...">
+				<img urn="my_gif" />
+				...
+			</img-sprite>
+			<img-data-uri urn="your_gif" />
+			<img-data-uri urn="${res.img.local.my_gif}" />
+			<!--
+				following is defined by deployment developer who is responsible for performance
+				tuning
+			-->
+			<common-js-slot-ref id="SYS" before-slot="HEAD" />
+			<common-js-slot-ref id="search" after-slot="BODY" />
+			<js-slot-group id="group1" main-slot="BODY">
+				<js-slot-ref id="header" />
+				<js-slot-ref id="BODY" />
+			</js-slot-group>
+			<css-slot-group id="group1" main-slot="BODY">
+				<css-slot-ref id="header" />
+				<css-slot-ref id="BODY" />
+			</css-slot-group>
+			...
+		</page>
+		...
+	</pages>
+</profile>

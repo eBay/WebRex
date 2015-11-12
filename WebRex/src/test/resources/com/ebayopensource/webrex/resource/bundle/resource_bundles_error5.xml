@@ -1,0 +1,13 @@
+<bundles>
+	<bundle id="bundle1">
+		<resource urn="js.local:/EbayTime.js" />
+		<resource/>
+	</bundle>
+	<bundle id="bundle2">
+		<resource urn="js.local:/SwitchTab.js" />
+	</bundle>
+	<bundle id="bundle3">
+		<resource urn="css.local:/Tracking.js" />
+		<resource urn="css.local:/mystyle.css" />
+	</bundle>
+</bundles>

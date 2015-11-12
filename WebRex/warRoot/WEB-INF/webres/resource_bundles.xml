@@ -1,0 +1,18 @@
+<bundles>
+	<bundle id="common" type="system">
+		<resource path="/js/sample/sample_sys1.js" />
+		<resource path="/js/sample/sample_sys2.js" />
+	</bundle>
+	<bundle id="sample">
+		<resource path="/js/sample/sample1.js" />
+		<resource path="/js/sample/sample.js" />
+	</bundle>
+	<bundle id="sample2">
+		<resource path="/js/sample/sample1.js" />
+		<resource path="/js/sample/sample2.js" />
+	</bundle>
+	<bundle id ="packagebundle">
+		<resourcePackage type="module" id="resource-module" />
+      <resourcePackage type="module" id="resourcepackage-module" extension="ext1" resourceType="js"/>
+  	</bundle>
+</bundles>

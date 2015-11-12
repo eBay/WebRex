@@ -1,0 +1,172 @@
+/*** BUTTONS ***/
+.btn{/* replaced .button */
+display: inline-block;
+zoom: 1; /* zoom and *display = ie7 hack for display: inline-block */
+*display: inline-block;
+vertical-align: baseline;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+font-weight: 500;
+text-shadow: 0 1px 0px rgba(0,0,0,.2);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0 3px 0px rgba(0,0,0,.2);
+-moz-box-shadow: 0 3px 0px rgba(0,0,0,.2);
+box-shadow: 0 3px 0px #ddd;
+font-size: 16px;
+padding: .5em 1.2em;
+*padding: .4em 1.1em;/*hack for IE7*/
+border: 1px solid transparent;
+margin: 0px;
+overflow: visible; /*hack for IE7*/
+}
+
+.btn:hover{
+text-decoration: none;
+border: 1px solid transparent #0065B0;
+-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+-moz-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+box-shadow: 0 0px 0px rgba(0,0,0,.2);
+-moz-transition: background-position 0.1s linear 0s;
+background-color: #eee;
+background-position: 0 -15px;
+}
+
+.btn:active{
+position: relative;
+top: 1px;
+}
+
+.btn-m{/* replaced .btn-medium */
+font-size: 14px;	
+}
+
+.btn-s{/* replaced .btn-small */
+font-size: 12px;
+}
+
+/*** BUTTON COLORS ***/
+/* PRIMARY - BLUE */
+.btn-prim, a.btn-prim, a.btn-prim:visited,
+.btn-split, a.btn-split, a.btn-split:visited{/* replaced .btn-primary-blue, replaced .btn-b */
+color: #fff;
+/* border: 1px solid transparent; */
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+text-decoration: none;
+background: #00509d;
+background: -webkit-gradient(linear, left top, left bottom, from(#0079bc), to(#00509d));
+background: -moz-linear-gradient(top, #0079bc, #00509d);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0079bc', endColorstr='#00509d');
+}
+
+.btn-prim:hover, a.btn-prim:hover, .btn-prim:focus, a.btn-prim:focus, .btn-prim:active, a.btn-prim:active{
+background: #00509d;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00509d', endColorstr='#00509d');
+}
+/* SECONDARY - LIGHT BLUE */
+.btn-scnd, a.btn-scnd, a.btn-scnd:visited{/* lightblue, replaced .btn-secondary-blue, replaced .btn-l */
+color: #fff;
+/* border: 1px solid transparent; */
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+text-decoration: none;
+background: #2386c0;
+background: -webkit-gradient(linear, left top, left bottom, from(#45aad6), to(#2386c0));
+background: -moz-linear-gradient(top, #45aad6, #2386c0);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45aad6', endColorstr='#2386c0');
+}
+
+.btn-scnd:hover, a.btn-scnd:hover, .btn-scnd:focus, a.btn-scnd:focus, .btn-scnd:active, a.btn-scnd:active{
+background: #2386c0;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2386c0', endColorstr='#2386c0');
+}
+
+/* TERTIARY - GRAY */
+.btn-ter, a.btn-ter, a.btn-ter:visited{/* replaced .btn-tertiary-gray, replaced .btn-d */
+color: #0654BA;
+border-width: 1px;
+border-style: solid;
+border-color: #DDDDDD;
+text-decoration: none;
+text-shadow: 0 0;
+background: #f8f8f8;
+background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f8f8f8));
+background: -moz-linear-gradient(top, #fefefe, #f8f8f8);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#f8f8f8');
+}
+
+.btn-ter:hover, a.btn-ter:hover, .btn-ter:focus, a.btn-ter:focus, .btn-ter:active, a.btn-ter:active{
+color: #025da1;
+border: 1px solid #aaa;
+background: #fafafa;
+}
+
+/* SPECIAL CASE CHECKOUT - GREEN */
+.btn-g, a.btn-g, a.btn-g:visited{/* replaced .btn-green */
+color: #fff;
+/* border: 1px solid transparent; */
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+text-decoration: none;
+background: #479313;
+background: -webkit-gradient(linear, left top, left bottom, from(#70b42d), to(#479313));
+background: -moz-linear-gradient(top, #70b42d, #479313);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70b42d', endColorstr='#479313');
+}
+
+.btn-g:hover, a.btn-g:hover, .btn-g:focus, a.btn-g:focus, .btn-g:active, a.btn-g:active{
+background: #2c7908;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c7908', endColorstr='#479313');
+}
+
+/* DISABLED */
+
+.btn.btn-d{
+	opacity:0.4;
+	progid:DXImageTransform.Microsoft.gradient(Opacity=40);
+	filter: alpha(opacity=40); /* IE 7 and Earlier */
+    /* Next 2 lines IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); 
+}
+
+.btn-d, a.btn-d, .btn[disabled], a.btn-d:visited,.btn-d:hover, a.btn-d:hover{
+	cursor: default;
+}
+
+.btn-d:active, a.btn-d:active{
+position: relative;
+top: 0px;
+}
+
+/* SPLIT BUTTONS*/
+.btn-split {
+border-radius: 0 3px 3px 0;
+}
+
+.dropdown > .btn-split:first-child {
+border-radius: 3px 0 0 3px;
+}
+
+.btn-split + .dropdown-toggle {
+padding: 8px 12px;
+*padding: 5px 12px;
+border-left: 1px solid #bbb;
+border-radius: 0 3px 3px 0;
+}
+
+.btn-ter + .dropdown-toggle {
+border-left: 0px;
+}
+
+.btn-m + .dropdown-toggle {
+padding: 7px 10px;
+*padding: 5px 10px;
+}
+
+.btn-s + .dropdown-toggle {
+padding: 6px 8px;
+*padding: 4px 8px 3px;
+}
+
+/* END BUTTONS */

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Copyright [2015-2016] eBay Software Foundation
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+	<description>JSP standard tag library for V4 resources</description>
+	<tlib-version>2.0</tlib-version>
+	<short-name>res</short-name>
+	<uri>http://www.ebay.com/webrex/core</uri>
+	<tag>
+		<description><![CDATA[Resource Tag. It will render a standard HTML resource tag. <p><br><b>&lt;res:include/&gt;</b><br></p>]]></description>
+		<name>set</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.SetTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The value to be set.]]></description>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.Object</type>
+		</attribute>
+		<attribute>
+			<description><![CDATA[The id of variable.]]></description>
+			<name>id</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<description><![CDATA[Resource Tag. It will render a standard HTML resource tag. <p><br><b>&lt;res:include/&gt;</b><br></p>]]></description>
+		<name>img</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.ImageTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The value of resourc path.]]></description>
+			<name>value</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description><![CDATA[The security override for the image url.]]></description>
+			<name>secure</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>boolean</type>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+		<tag>
+		<description><![CDATA[Ajax token resource Tag. It will render an ajax token tag.]]></description>
+		<name>token</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.TokenTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The type of ajax token resource.]]></description>
+			<name>type</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<description><![CDATA[Js Script Resource Tag. It will render a standard HTML javascript tag.]]></description>
+		<name>useJs</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.UseJsTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The value of resource path.]]></description>
+			<name>value</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.Object</type>
+		</attribute>
+		<attribute>
+			<description><![CDATA[The target slot id.]]></description>
+			<name>target</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+         <description><![CDATA[The security override for the useJs url.]]></description>
+         <name>secure</name>
+         <required>false</required>
+         <rtexprvalue>true</rtexprvalue>
+         <type>boolean</type>
+      </attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<description><![CDATA[Css Script Resource Tag. It will render a standard HTML CSS tag.]]></description>
+		<name>useCss</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.UseCssTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The value of resource path.]]></description>
+			<name>value</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.Object</type>
+		</attribute>
+		<attribute>
+			<description><![CDATA[The target slot id.]]></description>
+			<name>target</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+         <description><![CDATA[The security override for the useCss url.]]></description>
+         <name>secure</name>
+         <required>false</required>
+         <rtexprvalue>true</rtexprvalue>
+         <type>boolean</type>
+      </attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<description><![CDATA[Css Slot Tag. It will render a standard HTML CSS tag.]]></description>
+		<name>cssSlot</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.CssSlotTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The slot id.]]></description>
+			<name>id</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description><![CDATA[The media type.]]></description>
+			<name>media</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+         <description><![CDATA[The security override for the css slot tag.]]></description>
+         <name>secure</name>
+         <required>false</required>
+         <rtexprvalue>true</rtexprvalue>
+         <type>boolean</type>
+      </attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<description><![CDATA[Js Slot Tag. It will render a standard HTML JS tag.]]></description>
+		<name>jsSlot</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.JsSlotTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The slot id.]]></description>
+			<name>id</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+         <description><![CDATA[The security override for the js slot tag.]]></description>
+         <name>secure</name>
+         <required>false</required>
+         <rtexprvalue>true</rtexprvalue>
+         <type>boolean</type>
+      </attribute>
+		
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<description><![CDATA[Bundle Tag. It will render a resource bundle.]]></description>
+		<name>bundle</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.BundleTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The bundle id.]]></description>
+			<name>id</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.Object</type>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<description><![CDATA[Bean Tag. It will set resoure expression in the request attribute.]]></description>
+		<name>bean</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.BeanTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The attribute id.]]></description>
+			<name>id</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.Object</type>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<description><![CDATA[Resource Tag. It will render a resource.]]></description>
+		<name>resource</name>
+		<tag-class>com.ebayopensource.webrex.resource.tag.handler.ResourceTagHandler</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description><![CDATA[The value of resourc path.]]></description>
+			<name>value</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+         <description><![CDATA[The security override for the resource tag.]]></description>
+         <name>secure</name>
+         <required>false</required>
+         <rtexprvalue>true</rtexprvalue>
+         <type>boolean</type>
+      </attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+</taglib>

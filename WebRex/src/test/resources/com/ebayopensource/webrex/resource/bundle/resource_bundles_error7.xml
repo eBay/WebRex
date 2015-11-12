@@ -1,0 +1,5 @@
+<bundles>
+	<bundle id="bundle3">
+		<resource urn="js.local:/Tracking.js" />
+	</bundle>
+</bundles>

@@ -1,0 +1,16 @@
+<root>
+   <common-slots>
+   </common-slots>
+   <pages>
+      <page request-uri="/jsp/home.jsp">
+         <slot id="HEAD">
+            <resource urn="firstCss"/>
+            <resource urn="css.local:/secondCss"/>
+         </slot>
+         <slot-group id="group1" main-slot="BODY">
+            <slot-ref id="header"/>
+            <slot-ref id="BODY"/>
+         </slot-group>
+      </page>
+   </pages>
+</root>

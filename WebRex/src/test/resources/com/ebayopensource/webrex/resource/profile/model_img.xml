@@ -1,0 +1,12 @@
+<root>
+   <common-slots>
+   </common-slots>
+   <pages>
+      <page request-uri="/jsp/home.jsp">
+         <slot id="data-uri">
+            <resource urn="your_gif"/>
+            <resource urn="img.local:/my_gif"/>
+         </slot>
+      </page>
+   </pages>
+</root>

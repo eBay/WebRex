@@ -1,0 +1,40 @@
+<root>
+   <common-slots>
+      <slot id="SYS">
+         <resource urn="firstJs"/>
+         <resource urn="thirdJs"/>
+         <resource urn="js.local:/fourthJs"/>
+      </slot>
+      <slot id="search">
+      </slot>
+   </common-slots>
+   <pages>
+      <page request-uri="/jsp/home.jsp">
+         <slot id="HEAD">
+            <resource urn="trackingJs"/>
+            <resource urn="firstJs"/>
+         </slot>
+         <slot id="BODY">
+            <resource urn="thirdJs"/>
+            <resource urn="js.local:/fifthJs"/>
+         </slot>
+         <slot id="BOTTOM">
+            <resource urn="secondJs"/>
+            <resource urn="bigJs"/>
+            <resource urn="dynamic_1">js code here</resource>
+         </slot>
+         <slot id="ABOVE_FOLD">
+            <resource urn="otherJs"/>
+            <resource urn="anotherJs"/>
+         </slot>
+         <slot id="Header">
+         </slot>
+         <common-slot-ref id="SYS" before-slot="HEAD"/>
+         <common-slot-ref id="search" after-slot="BODY"/>
+         <slot-group id="group1" main-slot="BODY">
+            <slot-ref id="header"/>
+            <slot-ref id="BODY"/>
+         </slot-group>
+      </page>
+   </pages>
+</root>

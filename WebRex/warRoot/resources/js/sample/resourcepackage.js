@@ -1,0 +1,1 @@
+document.write("this is resourcepackage.js<br>");

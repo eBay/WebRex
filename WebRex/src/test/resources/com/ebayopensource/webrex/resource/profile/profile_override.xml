@@ -1,0 +1,27 @@
+<profile>
+	<common-js-slots>
+		<js-slot id="search">
+			...
+		</js-slot>
+	</common-js-slots>
+	<pages>
+		<page id="header" include="true">
+		</page>
+		<page id="footer" include="true">
+		</page>
+		<page id="home" request-uri="/jsp/home.jsp">
+			<import-page id="header" />
+			<import-page id="footer" />
+			<common-js-slot-ref id="SYS" before-slot="HEAD" />
+			<common-js-slot-ref id="search" after-slot="BODY" />
+			<js-slot-group id="group1" main-slot="BODY">
+				<js-slot-ref id="header" />
+				<js-slot-ref id="BODY" />
+			</js-slot-group>
+			<css-slot-group id="group1" main-slot="BODY">
+				<css-slot-ref id="header" />
+				<css-slot-ref id="BODY" />
+			</css-slot-group>
+		</page>
+	</pages>
+</profile>

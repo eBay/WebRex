@@ -1,0 +1,10 @@
+body {
+	background-color: #b0c4de;
+	background-image: url('/img/ebayLogo.gif');
+	background-image: url('ebayLogo.gif');
+	background-image: url('ebayerror.gif');
+	background-image: url(${res.img.local.img.ebayLogo_gif});
+	background-repeat: repeat-x;
+	background-position: right top;
+	margin-right: 200px;
+}

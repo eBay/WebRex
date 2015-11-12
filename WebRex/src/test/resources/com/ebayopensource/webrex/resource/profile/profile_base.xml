@@ -1,0 +1,39 @@
+<profile>
+	<common-js-slots>
+		<js-slot id="SYS">
+			<js urn="firstJs" />
+			<js urn="thirdJs" />
+		</js-slot>
+	</common-js-slots>
+	<pages>
+		<page id="header">
+		</page>
+		<page id="footer">
+		</page>
+		<page id="home" request-uri="/jsp/home.jsp">
+			<js-slot id="HEAD">
+				<js urn="trackingJs" /><!-- not in page, but added by profile -->
+				<js urn="firstJs" />
+			</js-slot>
+			<js-slot id="BODY">
+				<js urn="thirdJs" />
+			</js-slot>
+			<js-slot id="BOTTOM" default="true" deferred="true" override="true">
+				<js urn="secondJs" />
+				<js urn="bigJs" /> <!--  slot re-assignment-->
+				<js urn="dynamic_1">js code here</js> <!-- dynamic added from code -->
+			</js-slot>
+			<js-slot id="ABOVE_FOLD">
+				<js urn="otherJs" />
+				<js urn="anotherJs" />
+			</js-slot>
+			<js-slot id="Header">
+				...
+			</js-slot>
+			<css-slot id="HEAD">
+				<css urn="..." />
+			</css-slot>
+			<img-data-uri urn="your_gif" />
+		</page>
+	</pages>
+</profile>
