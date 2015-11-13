@@ -37,10 +37,10 @@ limitations under the License.
     <mailingLists>
         <mailingList>
             <name>WebRex User List</name>
-            <subscribe>WebRex-users+subscribe@googlegroups.com</subscribe>
-            <unsubscribe>WebRex-users+unsubscribe@googlegroups.com</unsubscribe>
-            <post>WebRex-users@googlegroups.com</post>
-            <archive>https://groups.google.com/forum/#!forum/WebRex-users</archive>
+            <subscribe>webrex+subscribe@googlegroups.com</subscribe>
+            <unsubscribe>webrex+unsubscribe@googlegroups.com</unsubscribe>
+            <post>webrex@googlegroups.com</post>
+            <archive>https://groups.google.com/forum/#!forum/webrex</archive>
         </mailingList>
     </mailingLists>
     
