@@ -34,7 +34,7 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Project overview 
-For big web projects, usually we need to do optimization for web resources like JS and CSS files. For example, we might need to aggregate multiple small CSS files into one big file to reduce the HTTP requests sent out by the client browser. There are many open source solutions to deal with the resource aggregation, like Google Wro4j and JAWR, but most of these open source solutions are "static" aggregation solutions. 
+For large web projects, usually we need to do optimization for web resources like JS and CSS files. For example, we might need to aggregate multiple small CSS files into one big file to reduce the HTTP requests sent out by the client browser. There are many open source solutions to deal with the resource aggregation, like Google Wro4j and JAWR, but most of these open source solutions are "static" aggregation solutions. 
 
 With static aggregation, the aggregation rules are defined in a separate configuration file(or other configuration system), and the aggregations are generated according to this configuration despite how the resources are actually used. But sometimes the usage of these resources might be very dynamic. For example, sometimes different resources will be used for different runtime conditions(user browser agent, user locale, etc), in this case, it might be hard to create configurations for all these runtime conditions.
 
