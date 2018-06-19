@@ -184,7 +184,7 @@ And if we change code as the following,
 		}	
 	</res:useCss>
 	
-The output would be
+The output would be 
 	
 	<link href="/sample/lrssvr/vxrummlit24jlp3abm4ecr1ajic.css" type="text/css" rel="stylesheet">
 	<style type="text/css">
